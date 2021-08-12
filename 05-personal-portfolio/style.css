@@ -181,6 +181,17 @@ footer a {
 
 
 @media only screen and (max-width: 600px) {
+    #navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ebedf0;
+        z-index: 10;
+    }
     #navbar div{
         font-size: 20px;
     }
@@ -194,4 +205,25 @@ footer a {
         font-size: 20px;
     }
 
+}
+
+@media only screen and (max-width: 320px){
+    #navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ebedf0;
+        z-index: 10;
+    }
+    #navbar div{
+        font-size: 15px;
+         padding-left: 5px;
+    }
+    #nav-links li a {
+        font-size: 10px;
+    }
 }
