@@ -3,15 +3,26 @@
 	padding:0;
 	box-sizing: border-box;
 }
+
 #navbar {
 	display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: #ebedf0;
     z-index: 10;
+}
+#navbar div{
+    font-size: 30px;
+    padding-left: 50px;
+    color: #03001c;
+}
+#navbar div a{
+    text-decoration: none;
+    color: #03001c;
 }
 #nav-links{
 	display:flex;
@@ -31,6 +42,7 @@
 	height:60px;
 	padding: 30px;
 	transition: 0.3s;
+    font-size: 20px;
 }
 #nav-links li a:hover{
 	background-color: #03001c;
@@ -63,6 +75,8 @@
 }
 
 
+
+
 #projects {
     display: flex;
     flex-direction: column;
@@ -80,44 +94,48 @@
 }
 .project-tile {
     border: 1px solid #03001c;
-    margin-right: 50px;
+    margin: 50px;
     margin-bottom: 30px;
 }
 
 .pr-img img {
     width: 400px;
     height: 400px;
-    margin: 0;
-    padding: 0%;
 }
 .pr-title {
     background-color: #ebedf0;
     text-align: center;
     font-size: 25px;
-    padding: 10px;
     transition: 0.4s;
 }
 .pr-title a{
     display: inline-block;
     width: 100%;
-    height: 100%;
+    height: auto;
     color: #ebedf0;
     text-decoration: none;
-    transition: 0.2s;
+    transition: 0.4s;
     background-color: #03001c;
 }
 
-.pr-title:hover{
-    background-color: #ebedf0;
-}
 .pr-title a:hover {
     color: #03001c;
+    background-color: #ebedf0;
 }
-#show-all {
-    margin: 30px;
-    padding: 10px 100px;
+#show-all a{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 15px 220px;
 }
 
+
+
+
+
+
+#contact h1, #contact p {
+    margin-bottom: 20px;
+}
 .contact-links {
     display: flex;
 }
@@ -144,6 +162,9 @@
     padding-bottom: 10px;
 }
 
+
+
+
 footer {
     display: flex;
     justify-content: space-around;
@@ -152,4 +173,25 @@ footer {
     color: #ebedf0;
     align-items: center;
     padding: 10px;
+}
+footer a {
+    text-decoration: none;
+    color: #ebedf0;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #navbar div{
+        font-size: 20px;
+    }
+    .section-dark h1 {
+        font-size: 30px;
+    }
+    .section-dark p {
+        font-size:20px;
+    }
+    .project-title {
+        font-size: 20px;
+    }
+
 }
